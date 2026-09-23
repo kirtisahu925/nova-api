@@ -13,12 +13,12 @@ app.use(express.json());
 app.get("/health", (_req, res) => {
   res.status(200).json({
     success: true,
-    message: "Roomsy Backend Running 🚀",
+    message: "Roomsy Backend Running ",
   });
 });
 
 const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
-  console.log(`🚀 Server running on http://localhost:${PORT}`);
+  console.log(`Server running on http://localhost:${PORT}`);
 });
